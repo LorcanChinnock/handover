@@ -1,6 +1,21 @@
 ---
 name: handover
-description: Use when the user runs /handover, or asks to "hand this off", "write a handover prompt", "generate a follow-up prompt for a new session", "give me something to paste into a fresh chat", or wants to end the current task and continue it later with a clean context window. Also use when the user opens a fresh session with a rough, underspecified idea and wants help turning it into a complete brief — e.g. "/handover I want to build some kind of dashboard for X" or "help me flesh this prompt out before I run it" — treat this as the same skill in reverse: instead of distilling history into a prompt, it brainstorms with the user to expand a vague ask into one. Either way it produces a single self-contained prompt, ready to paste into (or already sitting in) a session with no other context, front-loading the goal, state, decisions, gotchas, and success criteria so little to no extra research or back-and-forth is needed before acting. Accepts an optional focus argument to narrow a handover to one thread instead of the whole session.
+description: >
+  Use when the user runs /handover, or asks to "hand this off", "write a
+  handover prompt", "generate a follow-up prompt for a new session", "give me
+  something to paste into a fresh chat", or wants to end the current task and
+  continue it later with a clean context window. Also use when the user
+  opens a fresh session with a rough, underspecified idea and wants help
+  turning it into a complete brief — e.g. "/handover I want to build some
+  kind of dashboard for X" or "help me flesh this prompt out before I run
+  it" — treat this as the same skill in reverse: instead of distilling
+  history into a prompt, it brainstorms with the user to expand a vague ask
+  into one. Either way it produces a single self-contained prompt, ready to
+  paste into (or already sitting in) a session with no other context,
+  front-loading the goal, state, decisions, gotchas, and success criteria so
+  little to no extra research or back-and-forth is needed before acting.
+  Accepts an optional focus argument to narrow a handover to one thread
+  instead of the whole session.
 allowed-tools:
   - Bash
   - Read
